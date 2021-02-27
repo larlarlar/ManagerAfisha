@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor;
-@Data;
-@NoArgsConstructor;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class PurchaseItem {
     private int id;
