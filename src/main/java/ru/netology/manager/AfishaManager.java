@@ -3,6 +3,7 @@ package ru.netology.manager;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import ru.netology.domain.Afisha;
+
 @AllArgsConstructor
 @NoArgsConstructor
 
@@ -19,9 +20,10 @@ public class AfishaManager {
     public Afisha[] getNewest() {
         int count;
         if (items.length > movieCount) {
-        count = movieCount;
+            count = movieCount;
         } else {
-        count = items.length;}
+            count = items.length;
+        }
 
         Afisha[] result = new Afisha[count];
         for (int i = 0; i < result.length; i++) {
