@@ -11,17 +11,20 @@ import ru.netology.domain.Afisha;
 public class AfishaManager {
     private Afisha[] items = new Afisha[0];
     int movieCount = 10;
-    int count;
 
-    public AfishaManager(int i) {
+    public AfishaManager(int movieCount) {
+        if (movieCount >= 0) {
+            this.movieCount = movieCount;
+        }
     }
 
     public Afisha[] getNewest() {
+        int count;
         if (items.length > movieCount) {
-            count = movieCount;
+        count = movieCount;
         } else {
-            count = items.length;
-        }
+        count = items.length;}
+
         Afisha[] result = new Afisha[count];
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;

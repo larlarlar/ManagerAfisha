@@ -44,17 +44,17 @@ class AfishaManagerTest {
     void shouldGetAllButNewestFirst() {
         manager = new AfishaManager(10);
         setMovie();
-        Afisha[] expected = new Afisha[]{tenth, ninth, eighth, seventh, sixth, fivth, fourth, third, second, first};
         Afisha[] actual = manager.getNewest();
+        Afisha[] expected = new Afisha[]{tenth, ninth, eighth, seventh, sixth, fivth, fourth, third, second, first};
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void shouldGetAFewNewestFirst() {
-        manager = new AfishaManager(5);
+        manager = new AfishaManager(4);
         setMovie();
-        Afisha[] expected = new Afisha[]{tenth, ninth, eighth, seventh, sixth, fivth, fourth, third, second, first};
         Afisha[] actual = manager.getNewest();
+        Afisha[] expected = new Afisha[]{tenth, ninth, eighth, seventh};
         assertArrayEquals(expected, actual);
     }
 }
