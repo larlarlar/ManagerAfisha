@@ -9,5 +9,4 @@ public class Afisha {
     private String movieName;
     private String moviePoster;
     private String movieGenre;
-
 }
