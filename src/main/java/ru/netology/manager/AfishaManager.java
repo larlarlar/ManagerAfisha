@@ -1,12 +1,10 @@
 package ru.netology.manager;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.netology.domain.Afisha;
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 
 public class AfishaManager {
     private Afisha[] items = new Afisha[0];
